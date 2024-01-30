@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #clock
 
-hour=0
+hour=1
 minute=1
 counter=1
 
