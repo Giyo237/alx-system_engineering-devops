@@ -1,17 +1,27 @@
 #!/usr/bin/env bash
 #clock
+
 hour=0
 minute=1
+counter=1
 
 while [ $hour -lt 13 ]
 do
+  echo "Hour: $hour"
+
   while [ $minute -lt 60 ]
   do
-    printf "%02d:%02d\n" $hour $minute
+    echo $minute
 
+    ((counter++))
     ((minute++))
+
+    if [ $counter -eq 71 ]
+    then
+      exit 0
+    fi
   done
 
   ((hour++))
   minute=0
-done | head -n 70
+done
