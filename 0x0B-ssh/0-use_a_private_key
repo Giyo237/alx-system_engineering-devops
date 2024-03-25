@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#auto connect using script
+ssh -i ~/.ssh/school ubuntu@107.22.146.174
